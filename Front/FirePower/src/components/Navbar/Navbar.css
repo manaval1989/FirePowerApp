@@ -1,0 +1,59 @@
+.navbar {
+    background-color: #2F4F4F;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #D4AF37;
+  }
+  
+  .navbar-brand .logo {
+    color: #FFFFFF;
+    font-family: 'Army Stencil', 'Noto Serif Display', serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    color: #D3D3D3;
+    text-decoration: none;
+    font-family: 'Army Stencil', 'Noto Serif Display', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+  }
+  
+  .nav-link:hover {
+    color: #D4AF37;
+  }
+  
+  .nav-link.active {
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-links {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }

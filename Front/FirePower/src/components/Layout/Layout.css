@@ -1,0 +1,13 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3B5323;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-image: url('/path-to-your-camo-pattern.png');
+    background-blend-mode: overlay;
+  }

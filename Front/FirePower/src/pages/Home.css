@@ -1,0 +1,20 @@
+.home-container {
+    text-align: center;
+    padding: 2rem;
+    color: #FFFFFF;
+  }
+  
+  .home-container h1 {
+    font-family: 'Army Stencil', 'Noto Serif Display', serif;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .home-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #D3D3D3;
+  }

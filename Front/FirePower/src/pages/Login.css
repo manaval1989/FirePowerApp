@@ -1,0 +1,14 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    padding: 2rem;
+    color: #FFFFFF;
+  }
+  
+  .login-container h2 {
+    font-family: 'Army Stencil', 'Noto Serif Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }

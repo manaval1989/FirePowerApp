@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./RegisterForm.css";
 import SuccessModal from "../SuccessModal/SuccessModal";
+import RegisterLogo from "../RegisterLogo/RegisterLogo";
 
 interface FormData {
   username: string;
@@ -59,6 +60,7 @@ const RegisterForm: React.FC = () => {
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>
+        <RegisterLogo />
         <h2>REGISTRO DE USUARIO</h2>
 
         <div className="form-group">

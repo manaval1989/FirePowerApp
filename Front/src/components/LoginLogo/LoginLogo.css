@@ -1,0 +1,11 @@
+.login-logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.login-logo-image {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+} 

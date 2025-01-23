@@ -1,0 +1,10 @@
+.register-logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.register-logo-image {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+} 

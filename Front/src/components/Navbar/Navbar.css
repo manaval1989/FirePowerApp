@@ -8,11 +8,24 @@
   }
   
   .navbar-brand .logo {
-    color: #FFFFFF;
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  .navbar-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
+  .logo span {
+    font-family: 'Army Stencil', 'Noto Serif Display', serif;
+    font-size: 1.2rem;
     letter-spacing: 2px;
+    margin-top: 5px;
   }
   
   .navbar-links {

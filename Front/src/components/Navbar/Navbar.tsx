@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/Logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,7 +9,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/" className="logo">
-          FIREPOWER
+          <img src={logo} alt="FirePower Logo" className="navbar-logo" />
+          <span>FIREPOWER</span>
         </Link>
       </div>
 

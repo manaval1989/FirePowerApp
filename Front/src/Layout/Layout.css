@@ -1,13 +1,28 @@
 .layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #3B5323;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-image: url('/path-to-your-camo-pattern.png');
-    background-blend-mode: overlay;
-  }
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  background: linear-gradient(rgba(26, 38, 52, 0.8), rgba(26, 38, 52, 0.9)),
+    url('/src/assets/battlefield.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.content-container {
+  display: grid;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 2vw, 2rem);
+  position: relative;
+  background-color: var(--dark-overlay);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste para el navbar */
+.navbar {
+  background-color: rgba(47, 79, 79, 0.98);
+  backdrop-filter: blur(10px);
+}

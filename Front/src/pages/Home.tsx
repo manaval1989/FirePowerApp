@@ -1,53 +1,86 @@
 import React from "react";
-import NewsCard from "../components/NewsCard/NewsCard";
 import "./Home.css";
-
-const newsData = [
-  {
-    image: "/news/training.jpg",
-    title: "Nuevo Programa de Entrenamiento",
-    description:
-      "Implementación de técnicas avanzadas de combate y estrategia militar.",
-    date: "15 de Marzo, 2024",
-  },
-  {
-    image: "/news/equipment.jpg",
-    title: "Actualización de Equipamiento",
-    description: "Incorporación de nueva tecnología y equipamiento táctico.",
-    date: "12 de Marzo, 2024",
-  },
-  {
-    image: "/news/mission.jpg",
-    title: "Misión Completada con Éxito",
-    description: "Equipo Alpha completa ejercicio de simulación táctica.",
-    date: "10 de Marzo, 2024",
-  },
-  {
-    image: "/news/recruitment.jpg",
-    title: "Nueva Fase de Reclutamiento",
-    description: "Apertura del proceso de selección para nuevos candidatos.",
-    date: "8 de Marzo, 2024",
-  },
-];
 
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      <div className="hero-section">
-        <h1>FIREPOWER</h1>
-        <p>Bienvenido al sistema de gestión militar</p>
-      </div>
+      <h1 className="home-title">FIREPOWER</h1>
+      <p className="home-subtitle">Bienvenido al sistema de gestión militar</p>
 
-      <div className="news-grid">
-        {newsData.map((news, index) => (
-          <NewsCard
-            key={index}
-            image={news.image}
-            title={news.title}
-            description={news.description}
-            date={news.date}
-          />
-        ))}
+      <div className="cards-grid">
+        <div className="card">
+          <img src="/path-to-image" alt="Nuevo Programa de Entrenamiento" />
+          <h2>NUEVO PROGRAMA DE ENTRENAMIENTO</h2>
+          <p>
+            Implementación de técnicas avanzadas de combate y estrategia
+            militar.
+          </p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+
+        <div className="card">
+          <img src="/path-to-image" alt="Actualización de Equipamiento" />
+          <h2>ACTUALIZACIÓN DE EQUIPAMIENTO</h2>
+          <p>Nuevas adquisiciones y mejoras en el arsenal disponible.</p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+        <div className="card">
+          <img src="/path-to-image" alt="Nuevo Programa de Entrenamiento" />
+          <h2>NUEVO PROGRAMA DE ENTRENAMIENTO</h2>
+          <p>
+            Implementación de técnicas avanzadas de combate y estrategia
+            militar.
+          </p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+
+        <div className="card">
+          <img src="/path-to-image" alt="Actualización de Equipamiento" />
+          <h2>ACTUALIZACIÓN DE EQUIPAMIENTO</h2>
+          <p>Nuevas adquisiciones y mejoras en el arsenal disponible.</p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+        <div className="card">
+          <img src="/path-to-image" alt="Nuevo Programa de Entrenamiento" />
+          <h2>NUEVO PROGRAMA DE ENTRENAMIENTO</h2>
+          <p>
+            Implementación de técnicas avanzadas de combate y estrategia
+            militar.
+          </p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+
+        <div className="card">
+          <img src="/path-to-image" alt="Actualización de Equipamiento" />
+          <h2>ACTUALIZACIÓN DE EQUIPAMIENTO</h2>
+          <p>Nuevas adquisiciones y mejoras en el arsenal disponible.</p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+        <div className="card">
+          <img src="/path-to-image" alt="Nuevo Programa de Entrenamiento" />
+          <h2>NUEVO PROGRAMA DE ENTRENAMIENTO</h2>
+          <p>
+            Implementación de técnicas avanzadas de combate y estrategia
+            militar.
+          </p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+        <div className="card">
+          <img src="/path-to-image" alt="Nuevo Programa de Entrenamiento" />
+          <h2>NUEVO PROGRAMA DE ENTRENAMIENTO</h2>
+          <p>
+            Implementación de técnicas avanzadas de combate y estrategia
+            militar.
+          </p>
+          <span>15 de Marzo, 2024</span>
+        </div>
+
+        <div className="card">
+          <img src="/path-to-image" alt="Actualización de Equipamiento" />
+          <h2>ACTUALIZACIÓN DE EQUIPAMIENTO</h2>
+          <p>Nuevas adquisiciones y mejoras en el arsenal disponible.</p>
+          <span>15 de Marzo, 2024</span>
+        </div>
       </div>
     </div>
   );

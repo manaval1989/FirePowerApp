@@ -1,72 +1,90 @@
 .navbar {
-    background-color: #2F4F4F;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #D4AF37;
+  width: 100%;
+  background-color: rgba(26, 38, 52, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 2vw, 2rem);
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.brand-name {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.brand-name:hover {
+  color: var(--accent-color);
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 140, 0, 0.1);
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  
-  .navbar-brand .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #FFFFFF;
+
+  .logo-container {
+    justify-content: center;
   }
-  
-  .navbar-logo {
-    width: 60px;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  
-  .logo span {
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    margin-top: 5px;
-  }
-  
+
   .navbar-links {
-    display: flex;
-    gap: 2rem;
+    justify-content: center;
   }
-  
-  .nav-link {
-    color: #D3D3D3;
-    text-decoration: none;
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-  }
-  
-  .nav-link:hover {
-    color: #D4AF37;
-  }
-  
-  .nav-link.active {
-    color: #D4AF37;
-    border: 2px solid #D4AF37;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      padding: 1rem;
-    }
-  
-    .navbar-brand {
-      margin-bottom: 1rem;
-    }
-  
-    .navbar-links {
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+}

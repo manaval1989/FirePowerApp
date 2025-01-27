@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #FF8C00;
+  --primary-color: #D4AF37;
   --secondary-color: #1a2634;
-  --accent-color: #ffd700;
+  --accent-color: #D4AF37;
   --text-color: #FFFFFF;
   --dark-overlay: rgba(26, 38, 52, 0.05);
   --error-color: #ff4444;
@@ -24,7 +24,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   line-height: 1.6;
-  background-color: #3B5323;
+  background-color: rgba(26, 38, 52, 0.05);
 }
 
 #root {

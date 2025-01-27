@@ -7,22 +7,19 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
 }
 
 .content-container {
-  display: grid;
   width: min(100%, 1440px);
   margin: 0 auto;
   padding: 0 clamp(1rem, 2vw, 2rem);
   position: relative;
   background-color: var(--dark-overlay);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Ajuste para el navbar */
 .navbar {
-  background-color: rgba(47, 79, 79, 0.98);
+  background-color: rgba(26, 38, 52, 0.05);
   backdrop-filter: blur(10px);
 }

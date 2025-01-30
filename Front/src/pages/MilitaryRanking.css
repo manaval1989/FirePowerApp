@@ -1,0 +1,134 @@
+.ranking-container {
+  padding: clamp(1rem, 4vw, 4rem);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ranking-container h1 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+}
+
+.table-container {
+  background-color: rgba(26, 38, 52, 0.6);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.military-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Ocultar todas las columnas no esenciales por defecto */
+.military-table th:not(.essential),
+.military-table td:not(.essential) {
+  display: none;
+}
+
+/* Mostrar columnas progresivamente según el ancho */
+@media (min-width: 640px) {
+  .military-table th:nth-child(3),
+  .military-table td:nth-child(3) {
+    display: table-cell; /* Mostrar Personal Militar */
+  }
+}
+
+@media (min-width: 768px) {
+  .military-table th:nth-child(4),
+  .military-table td:nth-child(4) {
+    display: table-cell; /* Mostrar Vehículos */
+  }
+}
+
+@media (min-width: 1024px) {
+  .military-table th:nth-child(5),
+  .military-table td:nth-child(5) {
+    display: table-cell; /* Mostrar Aeronaves */
+  }
+}
+
+@media (min-width: 1200px) {
+  .military-table th:nth-child(6),
+  .military-table td:nth-child(6) {
+    display: table-cell; /* Mostrar Activos Navales */
+  }
+}
+
+.military-table th,
+.military-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  white-space: nowrap;
+}
+
+.military-table th {
+  color: var(--primary-color);
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: rgba(26, 38, 52, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.rank {
+  color: var(--primary-color);
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 150px;
+}
+
+.country img,
+.country svg {
+  width: 30px !important;
+  height: 20px !important;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.score {
+  min-width: 120px;
+}
+
+.score-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-fill {
+  background-color: var(--primary-color);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.score-bar span {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.military-table tr:hover td {
+  background-color: rgba(212, 175, 55, 0.1);
+} 

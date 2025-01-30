@@ -1,54 +1,43 @@
 .not-found-container {
   display: grid;
-  place-content: center;
-  gap: clamp(1rem, 2vw, 2rem);
-  width: 100%;
-  min-height: 100%;
+  place-items: center;
+  gap: 1rem;
+  padding: clamp(2rem, 4vw, 4rem);
   text-align: center;
-  padding: clamp(1rem, 2vw, 2rem);
+  min-height: calc(100vh - 200px);
 }
 
-.not-found-content {
-  display: grid;
-  gap: clamp(0.5rem, 1vw, 1rem);
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+.not-found-container h1 {
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: var(--primary-color);
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  margin: 0;
 }
-  
-  .not-found-container h1 {
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    font-size: 6rem;
-    color: #D4AF37;
-    margin-bottom: 1rem;
-  }
-  
-  .not-found-container h2 {
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .not-found-container p {
-    font-family: 'Roboto', sans-serif;
-    color: #D3D3D3;
-    margin-bottom: 2rem;
-  }
-  
-  .return-btn {
-    padding: 1rem 2rem;
-    background-color: #556B2F;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 4px;
-    font-family: 'Army Stencil', 'Noto Serif Display', serif;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-  }
-  
-  .return-btn:hover {
-    background-color: #3B5323;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+
+.not-found-container h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--primary-color);
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  margin: 0;
+}
+
+.not-found-container p {
+  color: var(--text-color);
+  margin: 1rem 0 2rem;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Army Stencil', 'Noto Serif Display', serif;
+  transition: all 0.3s ease;
+}
+
+.back-home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

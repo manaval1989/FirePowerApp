@@ -8,6 +8,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import NewsDetail from "../pages/NewsDetail";
 import About from "../pages/About";
 import FAQ from "../pages/FAQ";
+import MilitaryRanking from "../pages/MilitaryRanking";
 
 const WebRouter = () => {
   return (
@@ -16,6 +17,7 @@ const WebRouter = () => {
         <Route path="/" element={<Layout />}>
           {/* Rutas públicas */}
           <Route index element={<Home />} />
+          <Route path="ranking" element={<MilitaryRanking />} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="forgot-password" element={<ForgotPassword />} />

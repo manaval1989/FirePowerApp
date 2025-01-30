@@ -18,6 +18,14 @@ const Navbar: React.FC = () => {
 
         <div className="navbar-links">
           <Link
+            to="/ranking"
+            className={`nav-link ${
+              location.pathname === "/ranking" ? "active" : ""
+            }`}
+          >
+            RANKING
+          </Link>
+          <Link
             to="/login"
             className={`nav-link ${
               ["/login", "/register"].includes(location.pathname)

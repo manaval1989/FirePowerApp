@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
           <nav>
             <Link to="/">Inicio</Link>
             <Link to="/login">Acceder</Link>
+            <Link to="/ranking">Ranking Militar</Link>
           </nav>
         </div>
 

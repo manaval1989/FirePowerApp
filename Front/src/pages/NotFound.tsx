@@ -6,10 +6,10 @@ const NotFound: React.FC = () => {
   return (
     <div className="not-found-container">
       <h1>404</h1>
-      <h2>ÁREA RESTRINGIDA</h2>
-      <p>La página que buscas no existe.</p>
-      <Link to="/" className="return-btn">
-        VOLVER A BASE
+      <h2>PÁGINA NO ENCONTRADA</h2>
+      <p>La página que estás buscando no existe o ha sido movida.</p>
+      <Link to="/" className="back-home">
+        VOLVER AL INICIO
       </Link>
     </div>
   );

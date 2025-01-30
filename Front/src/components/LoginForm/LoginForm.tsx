@@ -47,45 +47,47 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <form className="login-form" onSubmit={handleSubmit}>
-      <LoginLogo />
-      <h2>INICIAR SESIÓN</h2>
+    <div className="auth-container">
+      <form className="auth-form" onSubmit={handleSubmit}>
+        <LoginLogo />
+        <h2>ACCEDER</h2>
 
-      <div className="form-group">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={loginData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </div>
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={loginData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </div>
 
-      <div className="form-group">
-        <input
-          type="password"
-          name="password"
-          placeholder="Contraseña"
-          value={loginData.password}
-          onChange={handleChange}
-        />
-        {errors.password && <span className="error">{errors.password}</span>}
-      </div>
+        <div className="form-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            value={loginData.password}
+            onChange={handleChange}
+          />
+          {errors.password && <span className="error">{errors.password}</span>}
+        </div>
 
-      <button type="submit" className="submit-btn">
-        INGRESAR
-      </button>
+        <button type="submit" className="submit-btn">
+          ACCEDER
+        </button>
 
-      <div className="links-container">
-        <Link to="/forgot-password" className="forgot-password">
-          ¿Olvidaste tu contraseña?
-        </Link>
-        <Link to="/register" className="register-link">
-          ¿No tienes cuenta? Regístrate
-        </Link>
-      </div>
-    </form>
+        <div className="auth-links">
+          <Link to="/forgot-password" className="forgot-password">
+            ¿Olvidaste tu contraseña?
+          </Link>
+          <Link to="/register" className="register-link">
+            ¿No tienes una cuenta? Créala aquí
+          </Link>
+        </div>
+      </form>
+    </div>
   );
 };
 

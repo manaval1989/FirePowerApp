@@ -5,6 +5,9 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
 import ForgotPassword from "../pages/ForgotPassword";
+import NewsDetail from "../pages/NewsDetail";
+import About from "../pages/About";
+import FAQ from "../pages/FAQ";
 
 const WebRouter = () => {
   return (
@@ -16,6 +19,9 @@ const WebRouter = () => {
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route path="news/:id" element={<NewsDetail />} />
+          <Route path="about" element={<About />} />
+          <Route path="faq" element={<FAQ />} />
 
           {/* Ruta para páginas no encontradas */}
           <Route path="404" element={<NotFound />} />

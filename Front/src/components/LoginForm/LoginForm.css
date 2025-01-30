@@ -1,10 +1,28 @@
+.auth-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: clamp(1rem, 2vw, 2rem);
+}
+
+.auth-form {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: 8px;
+  width: min(100%, 400px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(26, 38, 52, 0.6);
+}
+
 .login-form {
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(auto, 90%) minmax(1rem, 1fr);
   padding: 2rem 0;
   border-radius: 8px;
-  border: 2px solid #D4AF37;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(26, 38, 52, 0.6);
   
 }
 
@@ -67,25 +85,14 @@
 }
 
 .submit-btn:hover {
-  background-color: var(--accent-color);
-  box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
-.links-container {
-  margin-top: 1.5rem;
+.auth-links {
+  display: grid;
+  gap: 1rem;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
-.forgot-password, .register-link {
-  display: block;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.forgot-password:hover, .register-link:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-} 

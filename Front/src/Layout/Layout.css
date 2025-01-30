@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
 
 .content-container {
@@ -16,10 +17,12 @@
   position: relative;
   background-color: var(--dark-overlay);
   backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
 /* Ajuste para el navbar */
 .navbar {
   background-color: rgba(26, 38, 52, 0.05);
   backdrop-filter: blur(10px);
+  z-index: 11;
 }

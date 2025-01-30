@@ -22,9 +22,10 @@ html, body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
+  color: var(--primary-color);
   line-height: 1.6;
   background-color: rgba(26, 38, 52, 0.05);
+  text-align: center;
 }
 
 #root {

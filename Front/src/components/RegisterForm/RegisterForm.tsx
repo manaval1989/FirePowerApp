@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./RegisterForm.css";
 import SuccessModal from "../SuccessModal/SuccessModal";
 import RegisterLogo from "../RegisterLogo/RegisterLogo";
+import { Link } from "react-router-dom";
 
 interface FormData {
   username: string;
@@ -58,10 +59,10 @@ const RegisterForm: React.FC = () => {
   };
 
   return (
-    <div className="register-container">
-      <form className="register-form" onSubmit={handleSubmit}>
+    <div className="auth-container">
+      <form className="auth-form" onSubmit={handleSubmit}>
         <RegisterLogo />
-        <h2>REGISTRO DE USUARIO</h2>
+        <h2>CREAR CUENTA</h2>
 
         <div className="form-group">
           <input
@@ -110,8 +111,14 @@ const RegisterForm: React.FC = () => {
         </div>
 
         <button type="submit" className="submit-btn">
-          REGISTRAR
+          REGISTRARSE
         </button>
+
+        <div className="auth-links">
+          <Link to="/login" className="login-link">
+            ¿Ya tienes una cuenta? Accede aquí
+          </Link>
+        </div>
       </form>
 
       {showModal && <SuccessModal onClose={() => setShowModal(false)} />}

@@ -57,7 +57,7 @@
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-family: 'Army Stencil', 'Noto Serif Display', serif;
   font-size: clamp(0.875rem, 1vw, 1rem);

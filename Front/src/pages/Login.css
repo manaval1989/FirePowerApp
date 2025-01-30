@@ -11,15 +11,13 @@
 
 .login-form {
   width: min(100%, 400px);
-  background-color: #2F4F4F;
   padding: clamp(1.5rem, 3vw, 2.5rem);
   border-radius: 8px;
-  border: 2px solid #D4AF37;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .login-form h2 {
-  color: #FFFFFF;
+  color: #D4AF37;
   text-align: center;
   margin-bottom: 2rem;
   font-family: 'Army Stencil', 'Noto Serif Display', serif;
@@ -65,7 +63,7 @@
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background-color: #556B2F;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 4px;
   color: #FFFFFF;
@@ -77,8 +75,8 @@
 }
 
 .submit-btn:hover {
-  background-color: #3B5323;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .links-container {
@@ -86,7 +84,7 @@
   text-align: center;
 }
 
-.forgot-password, .register-link {
+.forgot-password, .register-link, .login-link {
   display: block;
   color: #D4AF37;
   text-decoration: none;
@@ -95,7 +93,7 @@
   transition: color 0.3s ease;
 }
 
-.forgot-password:hover, .register-link:hover {
+.forgot-password:hover, .register-link:hover, .login-link:hover {
   color: #FFD700;
   text-decoration: underline;
 }

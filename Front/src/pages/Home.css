@@ -40,6 +40,8 @@
   gap: 1rem;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .media-container {
@@ -79,15 +81,15 @@
   width: 100%;
   height: 100%;
   aspect-ratio: 16 / 9;
-  pointer-events: none;
-}
-
-.card:hover .card-image {
-  opacity: 0;
+  pointer-events: auto;
 }
 
 .card:hover .video-container {
   opacity: 1;
+}
+
+.card:hover .card-image {
+  opacity: 0;
 }
 
 /* Para todas las imágenes en las cards */
@@ -96,4 +98,28 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.card p,
+.card span {
+  color: var(--text-color);
+}
+
+/* O si prefieres ser más específico */
+.card {
+  /* ... otros estilos ... */
+}
+
+.card h2 {
+  /* mantener el color dorado actual */
+  color: var(--primary-color);
+}
+
+.card p {
+  color: var(--text-color);
+}
+
+.card span {
+  color: var(--text-color);
+  opacity: 0.8; /* opcional, para dar un toque más sutil a la fecha */
 }
